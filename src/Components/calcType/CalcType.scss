@@ -1,0 +1,39 @@
+@import '../../Abstracts/variables';
+
+.type-bar{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    background-color: white;
+    box-shadow: 1px 1px 6px rgb(192, 191, 191);
+
+    .type{
+        font-weight: 600;
+        font-size: 0.9rem;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    // .type:hover{
+    //     cursor: pointer;
+    //     background-color: rgb(230, 230, 230);
+    // }
+
+    @media (hover: hover) {
+        .type:hover{
+            cursor: pointer;
+            background-color: rgb(230, 230, 230);
+        }
+      }
+
+    .selected{
+        border-bottom: solid 4px $primary-colour;
+    }
+
+    // .combined{
+    //     border-bottom: solid 4px $primary-colour;
+    // }
+}

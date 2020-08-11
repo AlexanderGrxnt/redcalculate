@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import "./App.css";
+import Nav from './Components/nav/Nav';
+import CalcType from './Components/calcType/CalcType';
+import Current from './Components/Calculators/current/Current';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// APP CLASS //
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+        currentType: 'combined'
+    }
+  }
+
+  onUpdateType = (type) => {
+    console.log("type:", type)
+    this.setState({ currentType: type });
+  }
+
+  onSave = () => {
+    console.log("save clicked")
+  }
+
+  render() {
+
+    return (
+      <div className="App">
+        <Nav onSave={this.onSave} />
+        <CalcType currentType={this.state.currentType} onUpdateType={this.onUpdateType} />
+        <Current currentType={this.state.currentType} />
+      </div>
+    );
+  }
 }
 
 export default App;

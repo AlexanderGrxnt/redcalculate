@@ -1,0 +1,42 @@
+@import '../../Abstracts/variables';
+
+.top-nav{
+    background-color: $primary-colour;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 2px 6px rgb(192, 191, 191);
+
+    .title-container{
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+
+        .app-title{
+            color: white;
+            margin: 0;
+            height: 100%;
+            padding-left: 0.5rem;
+        }
+    }
+
+    .save-container{
+        display: flex;
+        padding-right: 1rem;
+        color: white;
+        justify-content: center;
+        align-items: center;
+
+        .save-text{
+            padding-right: 10px;
+        }
+    }
+
+    .save-container:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    
+}

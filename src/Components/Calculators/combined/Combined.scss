@@ -1,0 +1,90 @@
+@import '../../../Abstracts/variables';
+
+.calculator-container{
+    // background-color: white;
+    //margin: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .one-container{
+        display: flex;
+        width: 100%;
+        border: solid 2px rgb(201, 201, 201);
+        background-color: white;
+    }
+
+    .two-container{
+        display: flex;
+        width: 100%;
+        border: solid 2px rgb(201, 201, 201);
+        border-top: none;
+        background-color: white;
+    }
+
+    .label{
+        font-size: 0.9rem;
+        vertical-align: middle;
+    } 
+    
+    .input{
+        margin: 5px;
+    }
+
+    .error-message{
+        color: red;
+        font-size: 0.9rem;
+    }
+
+    .result-container{
+        display: flex;
+        width: 100%;
+        color: rgb(78, 78, 78);
+        font-weight: 700;
+        // font-size: 1.2rem;
+        background-color: $secondary-colour;
+        border: solid 2px rgb(201, 201, 201);
+        border-top: none;
+    }
+
+    .button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .button{
+            background-color: $primary-colour;
+            padding: 15px 30px;
+            margin: 10px;
+            color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 1px 1px 6px rgb(192, 191, 191);
+        }
+
+        .button:hover{
+            cursor: pointer;
+        }
+    }
+
+    .label{
+        padding: 20px;
+        width: 120px;
+        border-right: solid 2px rgb(201, 201, 201);
+    }
+
+    .input{
+        padding: 20px;
+        width: 70%;
+        //margin: 10px 15% 10px 15%;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 769px) {
+           
+    .calculator-container{
+        margin: 50px 20%;
+    }
+}
