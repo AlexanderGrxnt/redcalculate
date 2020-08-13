@@ -17,11 +17,6 @@
         
     }
 
-    // .type:hover{
-    //     cursor: pointer;
-    //     background-color: rgb(230, 230, 230);
-    // }
-
     @media (hover: hover) {
         .type:hover{
             cursor: pointer;
@@ -33,7 +28,4 @@
         border-bottom: solid 4px $primary-colour;
     }
 
-    // .combined{
-    //     border-bottom: solid 4px $primary-colour;
-    // }
 }

@@ -37,6 +37,22 @@
         cursor: pointer;
         transform: scale(1.03);
     }
+   
+}
 
-    
+@media only screen and (min-width: 769px) {
+    .top-nav{
+
+        .title-container{
+            margin-left: 20px;
+        }
+        
+        .save-container{
+            margin-right: 50px;
+
+            .save-text{
+                padding-right: 20px;
+            }
+        }
+    }
 }

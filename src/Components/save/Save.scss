@@ -1,0 +1,72 @@
+@import '../../Abstracts/variables';
+
+.popup-container{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 17%;
+    background-color: white;
+    padding: 10px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+
+    .popup-text{
+        text-align: center;
+    }
+
+    .popup-buttons{
+         display: flex;
+         flex-direction: column;
+
+        .select{
+            padding: 5px;
+            background-color: #00d674;
+            border-radius: 3px;
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            color: white;
+            box-shadow: 1px 1px 5px rgb(107, 107, 107);
+            margin: 10px 0 35px 0;
+            cursor: pointer;
+        }
+   
+        .cancel-save{
+            background-color: $primary-colour;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+    
+        .accept-save{
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 769px) {
+    .popup-container{
+        .popup-buttons{
+            display: flex;
+        }
+    }
+}
+
+.panel{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(73, 73, 73, 0.418);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}

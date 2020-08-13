@@ -9,8 +9,11 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-        currentType: 'combined'
+      currentType: 'combined'
     }
+
+    //Create reference to save function
+    this.save = React.createRef();
   }
 
   onUpdateType = (type) => {
@@ -20,6 +23,7 @@ class App extends Component {
 
   onSave = () => {
     console.log("save clicked")
+    this.save.current.sendData();
   }
 
   render() {
@@ -28,7 +32,7 @@ class App extends Component {
       <div className="App">
         <Nav onSave={this.onSave} />
         <CalcType currentType={this.state.currentType} onUpdateType={this.onUpdateType} />
-        <Current currentType={this.state.currentType} />
+        <Current ref={this.save} currentType={this.state.currentType} />
       </div>
     );
   }
