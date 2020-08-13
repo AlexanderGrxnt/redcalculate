@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./App.css";
 import Nav from './Components/nav/Nav';
-import CalcType from './Components/calcType/CalcType';
+import CalcType from './Components/calcTypeBar/CalcType';
 import Current from './Components/Calculators/current/Current';
 
 // APP CLASS //
